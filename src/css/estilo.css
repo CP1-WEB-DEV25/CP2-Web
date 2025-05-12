@@ -99,3 +99,30 @@ footer {
     font-size: 1.3rem;
     color: #ddd;
 }
+
+.sobre-nos {
+    background: #f5f7fa;
+    color: #1a1a1a;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.sobre-nos h1 {
+    text-align: center;
+
+}
+
+.sobre-nos p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+  }
+
+
+@media (max-width: 600px) {
+    .sobre-nos p{
+      font-size: 1em;
+    }
+}
