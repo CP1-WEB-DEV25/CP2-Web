@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded',()=>{ //EVENTO CARREGA A PAGINA AUTOMATICAMENTE
-    //DECLARANDO AS VARIAVEIS
+document.addEventListener('DOMContentLoaded',()=>{ 
+    
     const pergunta = document.getElementById('pergunta');
     const resposta = document.getElementById('resposta');
     const proximaPergunta = document.getElementById("proximo");
@@ -9,9 +9,8 @@ document.addEventListener('DOMContentLoaded',()=>{ //EVENTO CARREGA A PAGINA AUT
     const listaResultado = document.getElementById('lista-resultado');
     const reiniciarBotao = document.getElementById('inicio-btn')
 
-    //DECLARANDO O ARRAY DE PERGUNTAS
     const questoes=[
-        "Qual a principal vantagem dos carros elétricos? ",
+        "1. Qual empresa fabrica o modelo Tesla Model S?",
         "Qual empresa fabrica o modelo Tesla Model S?",
         "Qual é o principal tipo de energia que move um carro elétrico?",
         "Por que os carros elétricos não poluem o ar como os carros comuns?",
@@ -22,11 +21,11 @@ document.addEventListener('DOMContentLoaded',()=>{ //EVENTO CARREGA A PAGINA AUT
         "Como os carros elétricos ajudam o meio ambiente?",
         "Qual é uma diferença que você nota entre um carro elétrico e um comum?",
     ]
-    //DECLARANDOS AS VARIAVEIS
+   
     let perguntas = 0;
     const respostas = [];
 
-    //CRIANDO A FUNÇÃO MOSTRAR PERGUNTA
+    
 
     function mostrarPergunta(){
         if(perguntas <questoes.length){
@@ -38,7 +37,7 @@ document.addEventListener('DOMContentLoaded',()=>{ //EVENTO CARREGA A PAGINA AUT
         }
     }
 
-    //CRIANDO A FUNÇÃO MOSTRAR RESULTADO
+    
         function mostrarResultado(){
         containerPerguntas.classList.add('hidden');
         containerResultado.classList.remove('hidden');
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded',()=>{ //EVENTO CARREGA A PAGINA AUT
         })
     }
 
-//FUNÇÃO PARA PROXIMA PERGUNTA
+
 
     function nextQuestao(){
         const respostaAtual =resposta.value.trim();
@@ -67,7 +66,7 @@ document.addEventListener('DOMContentLoaded',()=>{ //EVENTO CARREGA A PAGINA AUT
     }
 
 
-     //FUNÇÃO PARA REINICIAR PERGUNTAS
+
 
     function reiniciarQuiz(){
         perguntas =0;
