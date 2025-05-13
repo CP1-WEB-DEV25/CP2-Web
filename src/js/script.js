@@ -20,3 +20,9 @@ function slideShow(){
     setTimeout("slideShow()",tempo)
 }
 slideShow();
+
+function irParaSobre() {
+    const secaoSobre = document.querySelector(".sobre-nos");
+    secaoSobre.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
