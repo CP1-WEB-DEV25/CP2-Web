@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded',()=>{ 
-    
     const pergunta = document.getElementById('pergunta');
     const resposta = document.getElementById('resposta');
     const proximaPergunta = document.getElementById("proximo");
